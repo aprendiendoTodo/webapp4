@@ -4,7 +4,11 @@ Sección 16: Fundamental: CRUD (create, read, update & del) - Eloquent & Resourc
 ###############################################################################################
 # Templating And Mark up (part 1)
 
-
+    Start                   create
+    PostController          create
+    master.blade.php        create
+    index.blade.php         create
+    web.php                 create route
 
 # Templating And Mark up (part 2)
 
