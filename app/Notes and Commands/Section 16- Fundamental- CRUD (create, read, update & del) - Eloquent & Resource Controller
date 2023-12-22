@@ -1,0 +1,64 @@
+
+Sección 16: Fundamental: CRUD (create, read, update & del) - Eloquent & Resource Controller
+
+###############################################################################################
+# Templating And Mark up (part 1)
+
+
+
+# Templating And Mark up (part 2)
+
+
+# Creating Models and Migrations for CRUD
+
+
+# Creating Form (Part 1)
+
+
+
+# Creating Form (Part 2)
+
+
+
+# Retrieving All Data From Data base Table
+
+
+
+
+# Updating specific Row with Eloquent (Part 1)
+
+
+
+
+# Updating specific Row with Eloquent (Part 2)
+
+
+
+# Show a specific Data
+
+
+
+
+# Deleting a specific Data
+
+
+
+# Impplementing Soft Deleting And show Row List 
+
+
+
+# Restoring Deleting Rows 
+
+
+
+
+# Deleting a record Permanently 
+
+
+
+# Implementing One to One Relation in Tables
+
+
+
+# Paginating Eloquent Results 
+

@@ -1,0 +1,5 @@
+    Create project
+> composer create-project laravel/laravel webapp4
+
+    Correr app  - run web app
+> php artisan serve
