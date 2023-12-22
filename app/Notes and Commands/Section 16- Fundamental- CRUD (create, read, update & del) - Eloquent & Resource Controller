@@ -40,7 +40,7 @@ Sección 16: Fundamental: CRUD (create, read, update & del) - Eloquent & Resourc
 
 # Retrieving All Data From Data base Table
 
-
+> php artisan storage:link
 
 
 # Updating specific Row with Eloquent (Part 1)
