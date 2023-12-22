@@ -45,7 +45,7 @@ Sección 16: Fundamental: CRUD (create, read, update & del) - Eloquent & Resourc
 
 # Updating specific Row with Eloquent (Part 1)
 
-
+  > php artisan route:list
 
 
 # Updating specific Row with Eloquent (Part 2)
