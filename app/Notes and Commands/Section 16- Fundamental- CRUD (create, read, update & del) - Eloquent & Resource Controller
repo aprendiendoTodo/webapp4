@@ -21,10 +21,17 @@ Sección 16: Fundamental: CRUD (create, read, update & del) - Eloquent & Resourc
 
 # Creating Models and Migrations for CRUD
 
+> php artisan make:model Post -m
+> php artisan make:model Category -m
+
+> php artisan migrate
+
+> php artisan route:list
 
 # Creating Form (Part 1)
 
-
+  Pass category to view 
+  Add validations to Create view 
 
 # Creating Form (Part 2)
 
