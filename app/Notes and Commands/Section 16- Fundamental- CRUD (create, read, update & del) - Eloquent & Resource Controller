@@ -73,11 +73,9 @@ Sección 16: Fundamental: CRUD (create, read, update & del) - Eloquent & Resourc
 
 > php artisan route:list
 
-
-
-
 # Restoring Deleting Rows 
 
+> php artisan route:list
 
 
 

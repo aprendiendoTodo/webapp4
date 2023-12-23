@@ -10,8 +10,8 @@
                     <h4>Trtashed Posts</h4>
                 </div>
                 <div class="col-md-6 d-flex justify-content-end">
-                    <a class="btn btn-success mx-1" href="{{route('posts.create')}}">Create</a>
-                    <a class="btn btn-warning mx-1" href="">Trashed</a>
+                    <a class="btn btn-success mx-1" href="{{route('posts.index')}}">Back</a>
+                    {{-- <a class="btn btn-warning mx-1" href="">Trashed</a> --}}
                 </div>
             </div>
         </div>
@@ -41,17 +41,16 @@
                     <td>{{$post->category_id}}</td>
                     <td>{{date('d-m-Y', strtotime($post->created_at))}}</td>
                     <td>
-                        <a class="btn-sm btn-success" href="{{route('posts.show', $post->id)}}">Show</a>
-                        <a class="btn-sm btn-primary" href="{{route('posts.edit', $post->id)}}">Edit</a>
-                        {{-- <a class="btn-sm btn-danger" href="{{route('posts.destroy', $post->id)}}">Delete</a> --}}
+                      <div class="d-flex">
+                        <a class="btn-sm btn-success" href="{{route('posts.restore', $post->id)}}">Restore</a>
 
-                        <form action="{{route('posts.destroy', $post->id)}}" method="POST">
+                        <form action="" method="POST">
                           @csrf
                           @method('DELETE')
                           <button class="btn-sm btn-danger">Delete</button>
                         </form>
-
-                      </td>                    
+                      </div>
+                    </td>                    
                   </tr>
                   @endforeach
                 </tbody>
