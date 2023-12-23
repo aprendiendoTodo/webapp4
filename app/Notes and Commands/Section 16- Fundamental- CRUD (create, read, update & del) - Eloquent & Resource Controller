@@ -66,6 +66,14 @@ Sección 16: Fundamental: CRUD (create, read, update & del) - Eloquent & Resourc
 
 # Impplementing Soft Deleting And show Row List 
 
+> php artisan route:list
+> php artisan make:migration add_posts_table --table=posts
+
+> php artisan migrate
+
+> php artisan route:list
+
+
 
 
 # Restoring Deleting Rows 
