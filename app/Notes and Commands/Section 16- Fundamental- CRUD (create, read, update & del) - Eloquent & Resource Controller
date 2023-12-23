@@ -52,11 +52,11 @@ Sección 16: Fundamental: CRUD (create, read, update & del) - Eloquent & Resourc
 
   > php artisan route:list
 
-  
+
 
 # Show a specific Data
 
-
+  > php artisan route:list 
 
 
 # Deleting a specific Data
