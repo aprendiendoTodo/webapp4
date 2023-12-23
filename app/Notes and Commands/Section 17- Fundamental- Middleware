@@ -10,7 +10,7 @@ Sección 17: Fundamental: Middleware
 
 # 90 Global Middleware
 
-
+> php artisan make:middleware CheckCountry
 
 # 91 Group Middleware
 
