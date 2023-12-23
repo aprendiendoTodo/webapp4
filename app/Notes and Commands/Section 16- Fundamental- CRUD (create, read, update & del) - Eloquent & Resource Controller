@@ -84,9 +84,9 @@ Sección 16: Fundamental: CRUD (create, read, update & del) - Eloquent & Resourc
 > php artisan route:list
 
 
-# Implementing One to One Relation in Tables
+# 86 Implementing One to One Relation in Tables
 
+  Post Model
 
-
-# Paginating Eloquent Results 
+# 87 Paginating Eloquent Results 
 

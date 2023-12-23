@@ -38,7 +38,7 @@
                     </td>
                     <td>{{$post->title}}</td>
                     <td>{{$post->description}}</td>
-                    <td>{{$post->category_id}}</td>
+                    <td>{{$post->category->name}}</td>
                     <td>{{date('d-m-Y', strtotime($post->created_at))}}</td>
                     <td>
                         <a class="btn-sm btn-success" href="{{route('posts.show', $post->id)}}">Show</a>
