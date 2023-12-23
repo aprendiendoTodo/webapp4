@@ -142,4 +142,13 @@ class PostController extends Controller
 
         return redirect()->back();
     }
+
+    public function forceDelete($id)
+    {
+        $post = Post::onlyTrashed()->findOrFail($id);
+        File::delete(public_path($post->image));
+        $post->forceDelete();
+
+        return redirect()->back();
+    }
 }

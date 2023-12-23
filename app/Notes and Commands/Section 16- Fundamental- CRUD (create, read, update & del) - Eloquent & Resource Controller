@@ -81,6 +81,7 @@ Sección 16: Fundamental: CRUD (create, read, update & del) - Eloquent & Resourc
 
 # Deleting a record Permanently 
 
+> php artisan route:list
 
 
 # Implementing One to One Relation in Tables
