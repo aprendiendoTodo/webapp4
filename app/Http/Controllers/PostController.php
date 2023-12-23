@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Post;
+use File;
 
 class PostController extends Controller
 {
@@ -83,7 +84,36 @@ class PostController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        // return $request;
+
+        $request->validate([
+            'title' => ['required', 'max:255'],
+            'category_id' => ['required', 'integer'],
+            'description' => ['required']
+        ]);
+
+        $post = Post::findOrFail($id);
+
+        if($request->hasFile('image'))
+        {
+            $request->validate([
+                'image' => ['required', 'max:2028', 'image']
+            ]);
+
+            $fileName = time().'_'.$request->image->getClientOriginalName();
+            $filePath = $request->image->storeAs('uploads', $fileName); // uploads/filename
+            
+            File::delete(public_path($post->image));
+            
+            $post->image = 'storage/'.$filePath;    // storage/uploads/filename       
+        }
+
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $post->category_id = $request->category_id;        
+        $post->save();        
+        
+        return redirect()->route('posts.index');
     }
 
     /**
