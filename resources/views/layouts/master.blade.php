@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand">Navbar</a>
+          <a class="navbar-brand" href="/">Nav-bar MJ</a>
         </div>
       </nav>
 
