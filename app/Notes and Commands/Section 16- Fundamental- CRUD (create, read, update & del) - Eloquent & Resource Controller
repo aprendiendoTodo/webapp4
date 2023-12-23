@@ -61,6 +61,7 @@ Sección 16: Fundamental: CRUD (create, read, update & del) - Eloquent & Resourc
 
 # Deleting a specific Data
 
+> php artisan route:list
 
 
 # Impplementing Soft Deleting And show Row List 
