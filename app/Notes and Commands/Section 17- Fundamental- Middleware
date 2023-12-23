@@ -6,7 +6,7 @@ Sección 17: Fundamental: Middleware
 
 # 89 Create Middleware
 
-
+> php artisan make:middleware TestMiddleware
 
 # 90 Global Middleware
 
