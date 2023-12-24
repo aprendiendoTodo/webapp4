@@ -23,7 +23,10 @@ Section 18: Fundamental: Blade Components
 
 96 Rendering Blade Components
 
+> php artisan make:component inputField
 
+   INFO  Component [C:\Users\Marco Julian\webapp4\app\View\Components\inputField.php] created successfully.  
+   
 
 97 Passing Data to Components
 

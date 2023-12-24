@@ -42,3 +42,8 @@ Route::group(["middleware" => "authCheck2"], function(){
     });    
 });
 
+
+Route::get('contact', function ()
+{
+    return view('contact');
+});
