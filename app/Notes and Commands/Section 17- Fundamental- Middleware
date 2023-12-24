@@ -14,7 +14,9 @@ Sección 17: Fundamental: Middleware
 
 # 91 Group Middleware
 
+> php artisan make:middleware AuthCheck
 
+http://127.0.0.1:8000/dashboard?auth=1
 
 # 92 Route Middleware
 

@@ -27,3 +27,18 @@ Route::resource('posts', PostController::class);
 Route::get('/unavailable', function() {
     return view('unavailable');
 })->name('unavailable');
+
+
+
+//  Route::group([], callback)
+
+Route::group(["middleware" => "authCheck"], function(){
+    Route::get('/dashboard', function(){
+        return view('dashboard');
+    });
+    
+    Route::get('/profile', function(){
+        return view('profile');
+    });    
+});
+
