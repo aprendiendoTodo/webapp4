@@ -30,6 +30,7 @@ Section 18: Fundamental: Blade Components
 
 97 Passing Data to Components
 
+> php artisan make:component Post/Index
 
 
 98 Component Slots

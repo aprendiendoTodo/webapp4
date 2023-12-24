@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,5 +46,6 @@ Route::group(["middleware" => "authCheck2"], function(){
 
 Route::get('contact', function ()
 {
-    return view('contact');
+    $posts = Post::all();
+    return view('contact', compact('posts'));
 });
