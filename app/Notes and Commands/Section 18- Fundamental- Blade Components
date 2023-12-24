@@ -1,0 +1,37 @@
+Section 18: Fundamental: Blade Components
+
+94 Introduction to Blade Components
+
+    here we Go!
+
+95 Creating Blade Components
+
+> php artisan make:component Button
+
+   INFO  Component [C:\Users\Marco Julian\webapp4\app\View\Components\Button.php] created successfully.  
+
+> php artisan make:component Forms/Button
+
+   INFO  Component [C:\Users\Marco Julian\webapp4\app\View\Components\Forms\Button.php] created successfully.     
+
+
+> php artisan make:component Forms/Link --inline
+
+   INFO  Component [C:\Users\Marco Julian\webapp4\app\View\Components\Forms\Link.php] created successfully.  
+
+
+
+96 Rendering Blade Components
+
+
+
+97 Passing Data to Components
+
+
+
+98 Component Slots
+
+
+
+99 Share Data in Blade Files
+
