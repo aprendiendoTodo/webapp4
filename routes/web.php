@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Models\Post;
 
+use Illuminate\Support\Facades\Mail;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,4 +50,12 @@ Route::get('contact', function ()
 {
     $posts = Post::all();
     return view('contact', compact('posts'));
+});
+
+Route::get('send-email', function (){
+    Mail::raw('This is a test mail', function ($message){
+        $message->to('test@gmail.com')->subject('hi this is a test email');
+    });
+
+    dd('success');
 });
