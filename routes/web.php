@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Models\Post;
+use App\Mail\OrderShipped;
 
 use Illuminate\Support\Facades\Mail;
 
@@ -53,9 +54,11 @@ Route::get('contact', function ()
 });
 
 Route::get('send-email', function (){
-    Mail::raw('This is a test mail', function ($message){
-        $message->to('test@gmail.com')->subject('hi this is a test email');
-    });
+    // Mail::raw('This is a test mail', function ($message){
+    //     $message->to('test@gmail.com')->subject('hi this is a test email');
+    // });
+
+    Mail::send(new OrderShipped);
 
     dd('success');
 });

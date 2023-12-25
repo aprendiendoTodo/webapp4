@@ -14,6 +14,10 @@ https://mailtrap.io/
 
 102 Send HTML View as an Email Body
 
+> php artisan make:mail OrderShipped
+
+   INFO  Mailable [C:\Users\Marco Julian\webapp4\app\Mail\OrderShipped.php] created successfully.  
+   
 
 103 Attaching Files to Email
 
