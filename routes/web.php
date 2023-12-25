@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Models\Post;
 use App\Mail\OrderShipped;
-
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 /*
@@ -61,4 +61,14 @@ Route::get('send-email', function (){
     Mail::send(new OrderShipped);
 
     dd('success');
+});
+
+Route::get('get-session', function (Request $request)
+{
+    // $data = session()->all();
+    // $data = $request->session()->all();
+
+    $data = $request->session()->get('_token');
+
+    dd($data);
 });
