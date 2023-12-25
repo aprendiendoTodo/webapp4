@@ -8,6 +8,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Attachment;
 
 class OrderShipped extends Mailable
 {
@@ -49,6 +50,8 @@ class OrderShipped extends Mailable
      */
     public function attachments(): array
     {
-        return [];
+        return [
+            Attachment::fromPath(public_path('/storage/uploads/1703289937_Michael Jordan.png')),
+        ];
     }
 }
