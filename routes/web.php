@@ -75,10 +75,22 @@ Route::get('get-session', function (Request $request)
 
 Route::get('save-session', function(Request $request)
 {
-    // $request->session()->put('user_id', '123');
-    // $request->session()->put(['user_status' => 'Logged_in']);
+    $request->session()->put('user_id', '123');
+    $request->session()->put(['user_status' => 'Logged_in']);
 
-    session(['user_id' => '123.23.11']);
+    session(['user_Pass' => '123.23.11']);
+
+    return redirect('get-session');
+});
+
+Route::get('destroy-session', function(Request $request)
+{
+    // $request->session()->forget('user_status');
+    // $request->session()->forget(['user_status']);
+
+    // session()->forget(['user_id', 'user_Pass', 'user_status']);
+
+    session()->flush(); // Delete all session data
 
     return redirect('get-session');
 });
