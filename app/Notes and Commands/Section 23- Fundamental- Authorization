@@ -6,7 +6,8 @@ Sección 23: Fundamental: Authorization
 
 123 Difference between Authentication and Authorization
 
-
+    * Authentication is about to verifying identity of a user
+    * Authorization is about to granting or denying accesss to resource or action based on the authenticated user permission.
 
 124 Autherization - Gates
 
