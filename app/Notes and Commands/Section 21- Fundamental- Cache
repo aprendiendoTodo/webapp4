@@ -2,9 +2,19 @@ Sección 21: Fundamental: Cache
 
 109 Introduction Of Cache
 
-
+Ok
 
 110 Difference Between Session and Cache
+
+        Some key differences between cache and session in Laravel:
+
+    1 Scope: Cache is global, mening that it is available to all users of the application. Session, on the other hand, 
+        is spefific to a user's session, and the data is only availableto that user.
+
+    2 Accessibility: Chache can be accessed from anywhere in the application, while session data is only available to the user's session.
+
+    3 Performance: Cache is generally faster than session, since it is stored in memory or in a cache store, 
+        which are faster than a database.
 
 
 
