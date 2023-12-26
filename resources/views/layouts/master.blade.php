@@ -12,6 +12,12 @@
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">Nav-bar MJ</a>
+
+          <form action="{{route('logout')}}" method="POST">
+            @csrf
+            <button type="submit" class="btn-sm btn-primary">Logout</button>
+          </form>
+
         </div>
       </nav>
 
