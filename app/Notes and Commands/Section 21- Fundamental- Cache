@@ -38,6 +38,9 @@ Ok
 
 114 Removing Data From Cache
 
+    Other way to clear cache
+> php artisan cache:clear
 
+Ok
 
 115 Using Cache with Pagination
