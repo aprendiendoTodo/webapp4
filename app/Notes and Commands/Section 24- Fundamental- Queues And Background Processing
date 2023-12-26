@@ -28,4 +28,18 @@ Sección 24: Fundamental: Queues And Background Processing
 
 130 Queueing an Email
 
+> php artisan make:mail PostPublished
 
+   INFO  Mailable [C:\Users\Marco Julian\webapp4\app\Mail\PostPublished.php] created successfully.  
+
+PS C:\Users\Marco Julian\webapp4> 
+
+> php artisan make:mail PostPublished
+
+   INFO  Mailable [C:\Users\Marco Julian\webapp4\app\Mail\PostPublished.php] created successfully.
+
+PS C:\Users\Marco Julian\webapp4> php artisan queue:work
+  2023-12-26 22:53:33 App\Jobs\SendMail ...................................... RUNNING
+  2023-12-26 22:53:35 App\Jobs\SendMail ...................................... 1s DONE
+  2023-12-26 22:53:35 App\Jobs\SendMail ...................................... RUNNING
+  2023-12-26 22:53:36 App\Jobs\SendMail ................................ 453.92ms DONE
