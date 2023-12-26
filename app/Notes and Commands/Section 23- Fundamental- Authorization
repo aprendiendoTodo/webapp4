@@ -27,6 +27,12 @@ Sección 23: Fundamental: Authorization
 
 127 Authorization - Role
 
+> php artisan make:model Role -m
+> php artisan migrate
 
+>php artisan make:migration add_users_table --table=users
+> php artisan migrate
+
+OK
 
 
