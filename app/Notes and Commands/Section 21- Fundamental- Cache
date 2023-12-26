@@ -20,6 +20,12 @@ Ok
 
 111 Installing Laravel Debugbar Package
 
+https://github.com/barryvdh/laravel-debugbar
+
+
+1 >composer require barryvdh/laravel-debugbar --dev
+
+2 >php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 
 
 112 Storing Data in Cache
