@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,3 +38,13 @@ Route::get('/posts/{id}/restore', [PostController::class, 'restore'])->name('pos
 Route::delete('/posts/{id}/force-delete', [PostController::class, 'forceDelete'])->name('posts.force_delete');
 
 Route::resource('posts', PostController::class);
+
+
+Route::get('user-data', function()
+{
+    //    return Auth::user();
+    // return Auth::user()->name;
+
+    // return auth()->user();
+    return auth()->user()->email;
+});
