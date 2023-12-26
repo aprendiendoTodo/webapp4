@@ -6,6 +6,24 @@ Sección 24: Fundamental: Queues And Background Processing
 
 129 Create the first job and Configuring Queues
 
+> php artisan queue:table
+
+   INFO  Migration created successfully. 
+
+> php artisan migrate
+
+   INFO  Running migrations.  
+
+  2023_12_26_222105_create_jobs_table ...................................... 45ms DONE
+
+    We Create a Job
+
+  > php artisan make:job
+
+  What should the job be named?
+❯ SendMail
+
+   INFO  Job [C:\Users\Marco Julian\webapp4\app\Jobs\SendMail.php] created successfully.
 
 
 130 Queueing an Email
