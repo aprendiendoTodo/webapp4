@@ -21,7 +21,9 @@ Sección 23: Fundamental: Authorization
 
 126 Authorization - Policy
 
+> php artisan make:policy PostPolicy --model=Post 
 
+   INFO  Policy [C:\Users\Marco Julian\webapp4\app\Policies\PostPolicy.php] created successfully.  
 
 127 Authorization - Role
 
