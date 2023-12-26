@@ -1,0 +1,32 @@
+Sección 25: Fundamental: Observers And Event Listeners
+
+131 Model Observers
+
+    Are used ton encapsulate klogic that should be excecuted when a certain events occur in your application, Basically observers allow you to listen for events on your model.
+
+        And take action when those events are triggrered.
+
+> php artisan make:observer PostObserver --model=Post
+
+   INFO  Observer [C:\Users\Marco Julian\webapp4\app\Observers\PostObserver.php] created successfully.  
+
+
+> php artisan queue:work
+  2023-12-26 23:38:50 App\Jobs\SendMail  RUNNING
+  2023-12-26 23:38:52 App\Jobs\SendMail  1s DONE
+
+  
+
+132 Introduction to Event - Listeners
+
+
+
+
+133 Creating Events - Listeners
+
+
+
+134 Practical Example Of Event - Listeners
+
+
+
