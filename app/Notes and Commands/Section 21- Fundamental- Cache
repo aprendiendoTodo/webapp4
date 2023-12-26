@@ -44,3 +44,10 @@ Ok
 Ok
 
 115 Using Cache with Pagination
+
+> php artisan cache:clear
+
+   INFO  Application cache cleared successfully.  
+
+   
+Ok
