@@ -94,3 +94,10 @@ Route::get('destroy-session', function(Request $request)
 
     return redirect('get-session');
 });
+
+Route::get('flash-session', function(Request $request)
+{
+    session()->flash('status', 'true');
+
+    return redirect('get-session');
+});
