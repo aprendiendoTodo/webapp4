@@ -15,11 +15,16 @@ Sección 25: Fundamental: Observers And Event Listeners
   2023-12-26 23:38:50 App\Jobs\SendMail  RUNNING
   2023-12-26 23:38:52 App\Jobs\SendMail  1s DONE
 
-  
+
 
 132 Introduction to Event - Listeners
 
+    Listeners, in laravel are used to trigger actions when certain things happen in your application.
 
+    Observers, are used to automatically trigger action when certain events happen to a model, observers are totally model dependent.
+
+        # Event
+        # Listeners 
 
 
 133 Creating Events - Listeners
