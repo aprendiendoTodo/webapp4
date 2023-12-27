@@ -43,5 +43,9 @@ PS C:\Users\Marco Julian\webapp4> php artisan make:event UserRegisterd
 
 134 Practical Example Of Event - Listeners
 
+>   php artisan make:mail WelcomeEmail
+>> C:\Users\Marco Julian\webapp4>
+
+   INFO  Mailable [C:\Users\Marco Julian\webapp4\app\Mail\WelcomeEmail.php] created successfully.  
 
 
