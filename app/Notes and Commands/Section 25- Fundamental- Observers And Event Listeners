@@ -29,6 +29,16 @@ Sección 25: Fundamental: Observers And Event Listeners
 
 133 Creating Events - Listeners
 
+endMail  624.97ms DONE
+PS C:\Users\Marco Julian\webapp4> php artisan make:event UserRegisterd
+
+   INFO  Event [C:\Users\Marco Julian\webapp4\app\Events\UserRegisterd.php] created successfully.  
+
+
+> php artisan make:listener SendWelcomeEmail --event=UserRegisterd
+ 
+   INFO  Listener [C:\Users\Marco Julian\webapp4\app\Listeners\SendWelcomeEmail.php] created successfully.  
+
 
 
 134 Practical Example Of Event - Listeners
