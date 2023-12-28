@@ -2,5 +2,5 @@
 
 return [
     'test' => 'Welcome to our site',
-    'Welcome to our application!' => 'Welcome to our application!',
+    'welcome' => 'Welcome to our application!',
 ];

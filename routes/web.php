@@ -5,6 +5,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use App\Jobs\SendMail;
 use App\Mail\PostPublished;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
@@ -72,6 +73,7 @@ Route::get('user-register', function (){
 });
 
 Route::get('greeting', function (){
+
    return view('greeting'); 
 });
 

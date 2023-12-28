@@ -7,6 +7,7 @@ use App\Observers\PostObserver;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Pluralizer;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,6 +27,8 @@ class AppServiceProvider extends ServiceProvider
         Post::observe(PostObserver::class);
 
         Paginator::useBootstrap();
+
+        // Pluralizer::useLanguage('spanish');
 
         View::share('site_name', 'My Site');
     }

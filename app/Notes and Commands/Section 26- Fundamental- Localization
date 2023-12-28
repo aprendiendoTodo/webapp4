@@ -13,3 +13,5 @@ Sección 26: Fundamental: Localization
     ok
 
 137 Change Translation Depending on Route
+
+php artisan config:clear
