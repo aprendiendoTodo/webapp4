@@ -70,3 +70,8 @@ Route::get('user-register', function (){
 
     dd('message send');
 });
+
+Route::get('greeting', function (){
+   return view('greeting'); 
+});
+
